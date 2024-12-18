@@ -194,3 +194,47 @@ footer {
 .highlight-text {
     color: #000000; 
 }
+
+/* ทำให้ section อยู่กลางหน้า */
+.message {
+    width: 60%;
+    margin: 0 auto; /* จัดกลางฟอร์ม */
+    padding: 20px;
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    border-radius: 10px; /* มุมโค้ง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+/* กรอบของฟอร์ม */
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+/* เพิ่มกรอบรอบ input, textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* เพิ่มความชัดเจนให้ปุ่ม */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* เพิ่มพื้นที่ให้ป้าย label */
+td {
+    padding: 10px;
+}
