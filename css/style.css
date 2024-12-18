@@ -159,12 +159,64 @@ footer {
 }
 
 .tourist-spot {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
     background-color: #fff;
-    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-container:hover .main-image {
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+.highlight-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.location-info {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.location-info a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.location-info a:hover {
+    text-decoration: underline;
+}
+
 
 .tourist-spot img {
     width: 50%;
