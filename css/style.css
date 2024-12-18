@@ -8,22 +8,50 @@
     line-height: 1.6;
    }
    header {
-    background: #333;
-    color: #fff;
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    justify-content: space-between; /* โลโก้ซ้ายสุด, เนื้อหาอื่นขวาสุด */
+    background-color: #ff8edf;
     padding: 1rem;
-   }
-   nav ul {
-    list-style: none;
+}
+
+header .logo {
+    width: 120px; /* ขนาดของ GIF */
+    height: auto;
+    margin-right: 1rem;
+}
+
+header nav ul {
+    list-style: none; /* ลบจุดหน้าเมนู */
     display: flex;
-    gap: 1rem;
-   }
-   nav a {
-    color: #fff;
-    text-decoration: none;
-   }
-   nav a.active {
-    color: #ffd700;
-   }
+    gap: 1rem; /* ระยะห่างระหว่างแต่ละข้อ */
+    margin-left: auto; /* ดันรายการไปขวาสุด */
+    padding: 0;
+}
+
+header nav ul li {
+    background-color: #ffffff; /* สีพื้นหลังแต่ละเมนู */
+    border: 2px solid #000000; /* กรอบสีดำ */
+    border-radius: 8px; /* มุมกรอบโค้งมน */
+    padding: 0.5rem 1rem; /* เพิ่มระยะห่างภายใน */
+    text-align: center;
+}
+
+header nav ul li a {
+    text-decoration: none; /* ลบเส้นใต้ */
+    color: #000000; /* สีข้อความ */
+    font-weight: bold;
+}
+
+header nav ul li a.active {
+    color: #ff8edf; /* สีสำหรับลิงก์ที่ active */
+}
+
+header nav ul li:hover {
+    background-color: #ffcccc; /* พื้นหลังเปลี่ยนเมื่อ hover */
+    transition: background-color 0.3s ease; /* เพิ่ม transition */
+}
+
    main {
     padding: 2rem;
     max-width: 800px;
